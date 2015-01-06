@@ -11,5 +11,5 @@ Funcionalidade: Começar jogo
     Quando começo um novo jogo
     Então vejo na tela:
       """
-      Bem-Vindo ao jogo da forca! 
+      Bem-Vindo ao jogo da forca!
       """

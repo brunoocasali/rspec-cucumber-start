@@ -1,10 +1,13 @@
 # encoding: UTF-8
 
 Quando(/^começo um novo jogo$/) do
-  game = Game.new
-  game.start
+  steps %{
+    * I run `forca` interactively
+  }
 end
 
-Então(/^vejo na tela:$/) do |string|
-  pending # express the regexp above with the code you wish you had
+Então(/^vejo na tela:$/) do |text|
+  steps %{
+    * the stdout should contain "#{text}"
+  }
 end
